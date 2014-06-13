@@ -167,7 +167,7 @@
 							// Loop to next item.
 							$selected.removeClassName(selectedClass);
 							prev = $tpList.down("li:last").addClassName(selectedClass)[0];
-							$tpDiv.scrollTop = prev.positionedOffset().top - prev.getHeight;
+							$tpDiv.scrollTop = prev.positionedOffset().top - prev.getHeight();
 						}
 						e.stop();
 						return false;
@@ -180,7 +180,7 @@
 						if (next) {
 							next.addClassName(selectedClass);
 							$selected.removeClassName(selectedClass);
-							if (next.positionedOffset().top + next.getHeight() > top + $tpDiv.getHeight) {
+							if (next.positionedOffset().top + next.getHeight() > top + $tpDiv.getHeight()) {
 								$tpDiv.scrollTop = top + next.getHeight();
 							}
 						}
