@@ -136,6 +136,7 @@
 			// Hide timepicker on blur
 			elm.on('blur', function() {
 				if (!tpOver) {
+					elm.value = '00:00';
 					$tpDiv.hide();
 				}
 			});
